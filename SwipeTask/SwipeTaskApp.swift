@@ -10,8 +10,8 @@ import SwiftUI
 @main
 struct SwipeTaskApp: App {
     var body: some Scene {
-        DocumentGroup(newDocument: SwipeTaskDocument()) { file in
-            ContentView(document: file.$document)
+        WindowGroup {
+            TodoListView()
         }
     }
 }
